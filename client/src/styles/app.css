@@ -2,7 +2,37 @@
   box-sizing: border-box;
 }
 
-div .wrapper {
+.wrapper {
   width: 500px;
   margin: 0 auto;
+}
+
+.invite {
+  text-align: center;
+}
+
+img {
+  width: 300px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+button {
+  font-size: 25px;
+  margin: 10px;
+}
+
+.pages {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+  border: 1px solid black;
+}
+
+.going {
+  text-align: center;
+}
+
+.notgoing {
+  text-align: center;
 }

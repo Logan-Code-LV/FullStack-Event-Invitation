@@ -2,11 +2,13 @@ const express = require("express")
 const router = express.Router()
 const axios = require("axios")
 const shortid = require("shortid")
+
 const data = {
   user: {},
   going: [],
   notgoing: []
 }
+
 router.get("/user", (req, res, next) => {
   axios.get("https://randomuser.me/api/?results=1").then(resp => {
     const obj = resp.data.results[0]

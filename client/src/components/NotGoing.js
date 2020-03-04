@@ -4,7 +4,7 @@ import React from "react"
 export default props => {
   const { notgoing } = useInvite()
   return (
-    <div>
+    <div className="notgoingpage">
       {notgoing.map(item => (
         <div className="notgoing">
           <img src={item.image}></img>

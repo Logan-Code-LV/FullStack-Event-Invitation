@@ -13,8 +13,10 @@ export default props => {
         <p>{user.phone}</p>
         <p>{user.email}</p>
       </div>
-      <button onClick={e => sendGoing(user)}>going</button>
-      <button onClick={e => sendNotgoing(user)}>notgoing</button>
+      <div className="buttons">
+        <button onClick={e => sendGoing(user)}>Going</button>
+        <button onClick={e => sendNotgoing(user)}>Not Going</button>
+      </div>
     </div>
   )
 }
